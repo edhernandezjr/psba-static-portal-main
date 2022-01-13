@@ -1,0 +1,82 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.lastSynced {
+  font-size: 16px;
+  color: #707070;
+  margin-bottom: 28px;
+}
+
+.staticPortal {
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0;
+  }
+  
+  table {
+    text-align: left;
+    font-size: 12px;
+
+    th, td {
+      vertical-align: top;
+    }
+  }
+  
+  .nodeWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $ms-screen-min-lg) {
+      width: 50%;
+    }
+  }
+
+  .equipmentRow {
+    @media screen and (min-width: $ms-screen-min-xl) {
+      display: flex;
+      margin: 0 -10px;
+    }
+  }
+
+  .equipment {
+    display: flex;
+		flex: 1;
+		flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    background-color: #f2f2f2;
+    min-height: 300px;
+
+    @media screen and (min-width: $ms-screen-min-xl) {
+      width: 50%;
+    }
+
+    .equipmentInner {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .equipmentNodes {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+    }
+
+    .nodeDropzone {
+      border: 1px dotted;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
+
+    .nodes {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

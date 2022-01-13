@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "static-portal-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/staticPortal/StaticPortalWebPart.js",
+          "manifest": "./src/webparts/staticPortal/StaticPortalWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "StaticPortalWebPartStrings": "lib/webparts/staticPortal/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
